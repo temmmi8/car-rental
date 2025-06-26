@@ -74,7 +74,7 @@ const SecondScreen = () => {
         <View
           style={{
             flexDirection: "row",
-            height: "30%",
+            height: "35%",
             marginTop: RFValue(40),
           }}
         >
@@ -94,7 +94,7 @@ const SecondScreen = () => {
                 height: "60%",
                 width: RFValue(150),
                 resizeMode: "cover",
-                right: RFValue(20),
+                right: RFValue(30),
                 position: "absolute",
               }}
             />
@@ -106,8 +106,26 @@ const SecondScreen = () => {
                 position: "absolute",
               }}
             >
-              <Text style={{ color: "white" }}> Standard</Text>
-              <Text style={{ color: "white" }}>56</Text>
+              <Text
+                style={{
+                  color: "white",
+                  fontSize: RFValue(14),
+                  fontFamily: "Poppins",
+                }}
+              >
+                {" "}
+                Standard
+              </Text>
+              <Text
+                style={{
+                  color: "white",
+                  marginLeft: RFValue(15),
+                  fontSize: RFValue(14),
+                  fontFamily: "Poppins",
+                }}
+              >
+                56
+              </Text>
             </View>
           </View>
           <View
@@ -116,7 +134,7 @@ const SecondScreen = () => {
               width: RFValue(150),
               backgroundColor: "#FFFFFF",
               position: "relative",
-              marginLeft: RFValue(35),
+              marginLeft: RFValue(50),
               borderRadius: RFValue(20),
             }}
           >
@@ -126,7 +144,7 @@ const SecondScreen = () => {
                 height: "60%",
                 width: RFValue(150),
                 resizeMode: "cover",
-                right: RFValue(20),
+                right: RFValue(30),
                 position: "absolute",
               }}
             />
@@ -138,7 +156,7 @@ const SecondScreen = () => {
               width: RFValue(150),
               backgroundColor: "#FFFFFF",
               position: "relative",
-              marginLeft: RFValue(35),
+              marginLeft: RFValue(50),
               borderRadius: RFValue(20),
             }}
           >
@@ -148,6 +166,7 @@ const SecondScreen = () => {
                 height: "60%",
                 width: RFValue(150),
                 resizeMode: "cover",
+                marginTop: RFValue(20),
                 right: RFValue(40),
                 position: "absolute",
               }}
