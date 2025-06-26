@@ -1,4 +1,5 @@
 import { LinearGradient } from "expo-linear-gradient";
+import { router } from "expo-router";
 import {
   Image,
   ImageBackground,
@@ -14,7 +15,7 @@ import {
 } from "react-native-safe-area-context";
 import Button from "../../component2/button";
 
-export default function HomeScreen() {
+const HomeScreen = () => {
   const insets = useSafeAreaInsets();
   return (
     <ImageBackground
@@ -27,9 +28,9 @@ export default function HomeScreen() {
     >
       <LinearGradient
         colors={[
-          "rgba(55, 82, 244, 1)",
+          "rgb(59, 6, 250)",
           "rgba(55, 82, 244, 0.6)",
-          "rgba(104, 120, 207, 0.86)",
+          "rgba(51, 32, 219, 0.86)",
         ]}
         style={{ flex: 1 }}
       >
@@ -107,11 +108,19 @@ export default function HomeScreen() {
                   Forgot Password
                 </Text>
               </TouchableOpacity>
-              <Button text={"LOG IN"} style={{ alignItems: "center" }} />
+              <Button
+                onPress={() => {
+                  router.navigate("/explore");
+                }}
+                text={"LOG IN"}
+                style={{ alignItems: "center" }}
+              />
             </View>
           </View>
         </SafeAreaView>
       </LinearGradient>
     </ImageBackground>
   );
-}
+};
+
+export default HomeScreen;
