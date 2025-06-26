@@ -1,3 +1,4 @@
+import { LinearGradient } from "expo-linear-gradient";
 import {
   Image,
   ImageBackground,
@@ -6,7 +7,6 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import LinearGradient from "react-native-linear-gradient";
 import { RFValue } from "react-native-responsive-fontsize";
 import {
   SafeAreaView,
@@ -23,14 +23,13 @@ export default function HomeScreen() {
       style={{
         alignItems: "center",
         flex: 1,
-        opacity: 1,
       }}
     >
       <LinearGradient
         colors={[
-          "rgba(55, 82, 244, 1)", // solid blue at the top
-          "rgba(55, 82, 244, 0.6)", // medium blue
-          "rgba(55, 82, 244, 0.2)", // faint at the bottom
+          "rgba(55, 82, 244, 1)",
+          "rgba(55, 82, 244, 0.6)",
+          "rgba(104, 120, 207, 0.86)",
         ]}
         style={{ flex: 1 }}
       >
